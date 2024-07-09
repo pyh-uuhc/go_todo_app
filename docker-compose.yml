@@ -5,7 +5,7 @@ services:
     build:
       args:
         - target=dev
-      volumes:
-        - .:/app
-      ports:
-        - "18000:80"
+    volumes:
+      - .:/app
+    ports:
+      - "18000:80"
