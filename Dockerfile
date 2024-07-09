@@ -1,4 +1,4 @@
-FROM golang:1.20-bullseye as deploy-builder
+FROM golang:1.22-bullseye as deploy-builder
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ CMD ["./app"]
 
 # --------------------------------------------------------------------------------
 
-FROM golang:1.20 as dev
+FROM golang:1.22 as dev
 WORKDIR /app
 RUN go install github.com/air-verse/air@latest
 CMD ["air"]
