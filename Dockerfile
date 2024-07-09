@@ -22,5 +22,5 @@ CMD ["./app"]
 
 FROM golang:1.18.2 as dev
 WORKDIR /app
-RUN go install github.com/cosmtrek/air@latest
+RUN go install github.com/air-verse/air
 CMD ["air"]
